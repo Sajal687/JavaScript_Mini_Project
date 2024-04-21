@@ -5,8 +5,8 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - run: bash file.bash
       - uses: actions/checkout@v4
+      - run: bash file.bash
       - uses: actions/setup-node@v4
         with:
              node-version: '20'
