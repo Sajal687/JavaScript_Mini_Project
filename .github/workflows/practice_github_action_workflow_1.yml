@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: {{github.actor}} is learning github
+run-name: ${{ github.actor }} is learning github
 on: [push]
 jobs:
   first_job:
