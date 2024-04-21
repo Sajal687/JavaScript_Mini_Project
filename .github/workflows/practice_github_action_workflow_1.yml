@@ -5,7 +5,7 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - run: sh file.bash
+      - run: bash file.bash
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
