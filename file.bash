@@ -3,8 +3,8 @@
 set -e
 set -x
 
-mkdir "$GITHUB_WORKSPACE/mydir"
-find "$GITHUB_WORKSPACE" -name mydir 
+cd "$GITHUB_WORKSPACE"  # Set working directory to repository root
+mkdir mydir
+find . -name mydir 
 echo "$(pwd)"
 echo 'directory is successfully created'
-
