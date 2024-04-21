@@ -1,6 +1,6 @@
 set -e
 set -x
 
-mkdir mydir
+mkdir "$GITHUB_WORKSPACE/mydir"
 echo "$(pwd)"
 echo 'directory is successfully created'
